@@ -33,3 +33,4 @@ document.getElementById("formularioTabla").addEventListener("submit", function(e
     evento.preventDefault();
     generarTablas();
 });
+

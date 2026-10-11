@@ -12,56 +12,94 @@
 
     <main class="contenedor">
         <header class="encabezado">
-            <span class="decoracion">🌈 ✨ 🎈</span>
-            <h1>¡Aprendamos a multiplicar!</h1>
-            <p>Diviértete practicando las tablas de multiplicar</p>
+            <div class="decoracion">🌈 ⭐ 🎈</div>
+            <h1>¡Mi Mundo de Multiplicaciones!</h1>
+            <p>Aprende las tablas de multiplicar de una forma divertida.</p>
         </header>
 
-        <button class="boton-probar" onclick="generarTablas()">
-            ⭐ PROBAR ⭐
-        </button>
-
         <section class="tarjeta">
-            <h2>🎨 Tabla del 3 🎨</h2>
-            <p class="instruccion">¡Vamos a aprender jugando!</p>
+            <h2>🎨 ¡Crea tu tabla!</h2>
 
-            <div id="tabla" class="tabla">
-                <div class="fila">
-                    <span>3 × 1</span><span class="resultado">= 3</span>
+            <p class="instruccion">
+                Escribe un número y descubre su tabla de multiplicar.
+            </p>
+
+            <form id="formularioTabla">
+                <label for="numeroTabla">¿Qué tabla quieres aprender?</label>
+
+                <input
+                    type="number"
+                    id="numeroTabla"
+                    min="1"
+                    max="100"
+                    step="1"
+                    value="3"
+                    placeholder="Escribe un número"
+                    required
+                >
+
+                <p class="ayuda">
+                    Elige un número entero del 1 al 100.
+                </p>
+
+                <button type="submit" class="boton-probar">
+                    ⭐ PROBAR ⭐
+                </button>
+            </form>
+
+            <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+            <section class="resultado-tabla" aria-label="Tabla de multiplicar">
+                <h2 id="tituloTabla">Tabla del 3</h2>
+
+                <div id="contenedorTabla" class="tabla">
+                    <div class="fila">
+                        <span>3 × 1</span>
+                        <span class="resultado">= 3</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 2</span>
+                        <span class="resultado">= 6</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 3</span>
+                        <span class="resultado">= 9</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 4</span>
+                        <span class="resultado">= 12</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 5</span>
+                        <span class="resultado">= 15</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 6</span>
+                        <span class="resultado">= 18</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 7</span>
+                        <span class="resultado">= 21</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 8</span>
+                        <span class="resultado">= 24</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 9</span>
+                        <span class="resultado">= 27</span>
+                    </div>
+                    <div class="fila">
+                        <span>3 × 10</span>
+                        <span class="resultado">= 30</span>
+                    </div>
                 </div>
-                <div class="fila">
-                    <span>3 × 2</span><span class="resultado">= 6</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 3</span><span class="resultado">= 9</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 4</span><span class="resultado">= 12</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 5</span><span class="resultado">= 15</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 6</span><span class="resultado">= 18</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 7</span><span class="resultado">= 21</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 8</span><span class="resultado">= 24</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 9</span><span class="resultado">= 27</span>
-                </div>
-                <div class="fila">
-                    <span>3 × 10</span><span class="resultado">= 30</span>
-                </div>
-            </div>
+            </section>
         </section>
- 
+
         <footer>
             <p>💖 Creado por: Ari 💖</p>
-            <p>¡Cada día aprendemos algo nuevo!</p>
+            <p>¡Practica, aprende y diviértete cada día!</p>
         </footer>
     </main>
 
